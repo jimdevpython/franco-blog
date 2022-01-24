@@ -31,8 +31,7 @@ Bootstrap(app)
 # CONNECT TO DB
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
-    "postgres://nbzwmumirqfppi:47b788a8881e38177f5f4a4a667befc7cd0271f42c46d88081e7a0e2adb49ca6@ec2-23-20-73-25"
-    ".compute-1.amazonaws.com:5432/dfhcarujoqmu5i ")
+    "postgres://nbzwmumirqfppi:47b788a8881e38177f5f4a4a667befc7cd0271f42c46d88081e7a0e2adb49ca6@ec2-23-20-73-25.compute-1.amazonaws.com:5432/dfhcarujoqmu5i")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = MySQLAlchemy(app)
 
